@@ -7,6 +7,7 @@
 
 ## 20th September, 2021
 
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/1.png)
 
 ## Members-
 
@@ -33,6 +34,8 @@ the above problems is “Open Banking “. It providesthird-party financial serv
 open access to consumer banking, transaction, andother financial data from banks and
 non-bankfinancial institutions through the use ofApplication Programming Interfaces
 (API).
+
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/2.png)
 
 Although, open banking is a revolutionary idea it’sstill in its nascent stage due to many
 unsolved technical issues such as the absence of transparentand user-friendly **Strong**
@@ -76,6 +79,8 @@ decentralized network having the documents to openthe individual’s new bank ac
 
 A surface overview for the solution idea which we are proposing can be explained by the
 diagram shown below.
+
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/3.png)
 
 ```
 High-Level Architecture Overview
@@ -150,14 +155,15 @@ below:
 
 **Docker YML Code** :docker-compose.yml
 
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/7.png)
 
 After the establishment of the dummy network, the genesis block for a sample node that
 dictates the account creation process, transfer protocol,and rights will look like:
 
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/4.png)
+
 After the creation of the genesis block, we can addmultiple accounts(users) at a time by
 giving special permission to bank nodes for accountcreation with quorum 0. Once all the
-
-
 accounts for a bank have been updated, interbank communication can happen through
 these nodes with the pre-initialized set of protocols.
 
@@ -183,6 +189,8 @@ nodes. But, even though the data will be shared itwill be intangible unless the 
 are provided by bank nodes for data retrieval andverification. This way the transactions
 are secured while maintaining transparency in thesystem. This is the true essence of open
 banking and blockchain which enables such dichotomyto happen.
+
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/5.png)
 
 ```
 Communication Between 2 Nodes in the System
@@ -215,6 +223,7 @@ accounts in the network and provide deep insightsfor migration advantages to the
 
 The overall procedure of displaying information andmigrating is displayed below:
 
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/10.png)
 
 ```
 In the above process flow, it’s assumed that the user has a bank account in both the banks
@@ -261,6 +270,8 @@ standard javascript codebase. This will be securedwith an inbuilt app lock that 
 one-time set key or fingerprint access. Once loggedin, the user will be prompted to create a
 username, password (initially, which will be continuedlater on unless logged out)
 
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/9.png)
+
 After the security login to the app, the user willbe shown their profile with their unique universal
 keycode and the list of all the Open Bank APIs. Oncethey select to visit their account with our
 API a new set of private and public keys will begenerated corresponding to their bank accounts
@@ -271,9 +282,12 @@ argument. This will add another layer of securityto our application.
 Demonstration: For our small-scale network with 4peer nodes and 2 customers, the python
 program shown below will be used.
 ```
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/8.png)
 
 This can lead to a highly secured connection in addition to the database being decentralized
 with hyperledger Iroha which will greatly reduce theattack vector in case of cyber attack.
+
+flag==0
 
 ```
 UI for Key Pair
