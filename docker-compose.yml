@@ -1,0 +1,104 @@
+version: "2.4"
+
+services:
+  iroha_node1:
+    image: hyperledger/iroha:latest
+    container_name: iroha_node1
+    expose: 
+      - 10001
+    ports:
+      - 50051:50051
+    environment:
+      - "KEY=node1"
+      - "IROHA_POSTGRES_HOST=postgres_node"
+    volumes:
+      - blockstore_0:/tmp/block_store
+      - ./config/iroha_node_1:/opt/iroha_data
+    depends_on:
+      - postgres_node
+    networks:
+      - iroha-network
+    restart: on-failure
+  
+  iroha_node2:
+    image: hyperledger/iroha:latest
+    container_name: iroha_node2
+    expose: 
+      - 10001
+    ports:
+      - 50052:50051
+    environment:
+      - "KEY=node2"
+      - "IROHA_POSTGRES_HOST=postgres_node"
+    volumes:
+      - blockstore_1:/tmp/block_store
+      - ./config/iroha_node_2:/opt/iroha_data
+    depends_on:
+      - postgres_node
+    networks:
+      - iroha-network
+    restart: on-failure
+  
+  iroha_node3:
+    image: hyperledger/iroha:latest
+    container_name: iroha_node3
+    expose: 
+      - 10001
+    ports:
+      - 50053:50051
+    environment:
+      - "KEY=node3"
+      - "IROHA_POSTGRES_HOST=postgres_node"
+    volumes:
+      - blockstore_2:/tmp/block_store
+      - ./config/iroha_node_3:/opt/iroha_data
+    depends_on:
+      - postgres_node
+    networks:
+      - iroha-network
+    restart: on-failure
+
+  iroha_node4:
+    image: hyperledger/iroha:latest
+    container_name: iroha_node4
+    expose: 
+      - 10001
+    ports:
+      - 50054:50051
+    environment:
+      - "KEY=node4"
+      - "IROHA_POSTGRES_HOST=postgres_node"
+    volumes:
+      - blockstore_3:/tmp/block_store
+      - ./config/iroha_node_4:/opt/iroha_data
+    depends_on:
+      - postgres_node
+    networks:
+      - iroha-network
+    restart: on-failure
+  
+  postgres_node:
+    image: postgres:9.5
+    container_name: postgres_node
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: pwd123
+    expose:
+      - 5432
+    volumes:
+      - postgres_store:/var/lib/postgresql/data
+    networks:
+      - iroha-network
+    restart: on-failure
+
+volumes:
+  blockstore_0:
+  blockstore_1:
+  blockstore_2:
+  blockstore_3:
+  postgres_store:
+
+networks:
+  iroha-network:
+    external:
+      name: iroha-network
