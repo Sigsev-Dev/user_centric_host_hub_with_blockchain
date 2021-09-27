@@ -302,6 +302,8 @@ npm packages, we can then run the Iroha instance usingthe docker commands, with 
 demo implementation already explained above. We canfinally compile our Android mobile
 App with ionic Cordova build commands.
 
+![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/12.png)
+
 #### UI Wireframe
 
 
