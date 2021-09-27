@@ -5,17 +5,17 @@
 
 ## Experience
 
-## 20th September, 2021
+ 20th September, 2021
 
 ![](https://github.com/Sigsev-Dev/user_centric_host_hub_with_blockchain/blob/main/Images/1.png)
 
-## Members-
+# Members-
 
-## ○ Amardeep Saha
+ ○ Amardeep Saha
 
-## ○ Dev Pant
+ ○ Dev Pant
 
-## ○ Devesh Kashyap
+ ○ Devesh Kashyap
 
 
 ## Introduction to Problem
